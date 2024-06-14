@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>奇怪SILGA--个人的“兔子洞”</title>
+  <link rel="stylesheet" href="style.css">
+  <title>实时显示系统时间</title>
+  <style type="text/css">
+   *{
+      padding:0px;
+       margin:0px;
+       border:0px;
+   }
+    </style>
+    <style>
+        #timeDisplay {
+            font-size: 1em;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 80px;
+
+        }
+        #visitCounter{
+            font-size: 1em;
+            color: rgb(255, 122, 122);
+            position: absolute;
+            top: 100px;
+            left: 20px;
+        }
+        #usernameDisplay{
+         font-size: 1em;
+            color: rgb(255, 174, 174);
+            position: absolute;
+            top: 80px;
+            left: 90px;
+        }
+    </style>
+
+  <style>
+     h2
+     {
+        color :cadetblue; 
+     }
+  </style>
+
+
+ </head>
+ <body>
+
+
+<!--页眉-->
+ <div id="header-wrapper">
+
+  <!--网站 and logo-->
+  <header class="container">
+    <div id="logo">
+	  <h1>SILGA的巢穴</h1>
+     <h3>SILGA's Lair</h3>
+	</div>
+   <div id="timeDisplay"></div>
+   <div id="usernameDisplay"></div>
+   <span id="visitCounter"></span>
+	<div id="search">
+	</div>
+
+   
+   <!-- 在您的网页头部或合适位置添加音频标签 -->
+<audio id="audioPlayer" src="audio/1.[Dreamcore] Warm Nights(Av311102991,P1).mp3" preload="auto" loop></audio>
+
+<!-- 添加音乐播放按钮 -->
+<button id="musicButton" onclick="toggleMusic()">播放/暂停音乐</button>
+<!-- 新增的下一首按钮 -->
+<button id="nextButton" onclick="playNextSong()">下一首</button>
+   
+
+   
+ 
+  <!--导航菜单-->
+  <div id="nav">
+     <nav class="container">
+	   <ul>
+         <li><a href="#home">首页</a></li>
+         <li><a href="#MyPrecious">我的收藏</a></li>
+         <li><a href="#MyOC">我的角色</a></li>
+         <li><a href="#MyArtWork">我的作品</a></li>
+         <li><a href="contract1.html" target="_blank">联系我</a></li>
+         <li><a href="#about">关于我</a></li>
+	   </ul>
+
+	   <div id="menu-logo">
+	   logo
+      </div>         
+	  </nav>
+  </div>
+  
+ </div>
+  </header>
+
+<!--内容-->
+<div id="home" class="container">
+    <!--欢迎界面-->
+    <section>
+	   <video autoplay loop muted playsinline id="background-video">
+         <source src="video/欢迎背景.mp4" type="video/mp4">
+         <!-- 可以添加webm等其他格式的备用源 -->
+         <track kind="captions" src="videos/captions.vtt" srclang="en" label="English">
+         <!-- 这里是替代内容，对于不支持视频的浏览器 -->
+     </video>
+     <!-- 其他的h2, h3, p, a等元素 -->
+	  <section class="Welcome">
+      <h2 id="title1">--欢迎进入--</h2>
+         <h3>奇怪SILGA的“兔子洞”</h3>
+		 <div class="Welcome-content">
+		 <p>在这里您可以看到：</p>
+		 <p>SILGA最爱的美学收藏和个人作品
+		 </p>
+		 </div>
+		 <a href="#" onclick="confirmAndClose()">好像包含不适内容！我要退出！</a>
+       <canvas id="ring-circle"></canvas>
+
+	  </section>
+	</section>
+
+   <section class="slogan">
+      <blockquote>"欢迎访问我的个人网站！我会分享奇奇怪怪的小东西！"<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;"也欢迎大家的讨论与留言！"<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;--SILGA留</blockquote>
+   </section>
+<main>
+<div class="Acticles"> 
+ <div id="MyPrecious" class="MyPrecious">
+   <div class="MyPrecious_Title">
+      <h1>我的收藏</h1>
+   </div>
+
+     <!--左侧文章内容区-->
+  <article >
+   <video autoplay loop muted playsinline id="medle-background-video">
+      <source src="video/波纹.mp4" type="video/mp4">
+      <!-- 可以添加webm等其他格式的备用源 -->
+      <track kind="captions" src="videos/captions.vtt" srclang="en" label="English">
+      <!-- 这里是替代内容，对于不支持视频的浏览器 -->
+  </video>
+    <!--最近上映-->
+    <section class="article-section">
+    <h2>最近想看</h2>
+    <div class="best-movie">
+      <a href="https://www.douban.com/doubanapp/dispatch?uri=/movie/36235977" target="_blank">
+      <img src="Movies/后室.png" alt="电影后室">
+      <h3>《后室》</h3>
+      <p>The Backrooms (2024)</p>
+      <p>简介：《The Backrooms》的改编电影《Under Wraps》正在A24公司制作中，这部电影基于在YouTube上病毒式传播的恐怖系列。
+
+         凯恩·帕森斯（Kane Parsons）将在暑假期间执导这部电影，詹姆斯·温（James Wan）和肖恩·利维（Shawn Levy）将担任执行制片人。</p>
+    </a>
+   </div>
+    <div class="best-movie">
+      <a href="https://www.douban.com/doubanapp/dispatch?uri=/movie/35027791" target="_blank">
+      <img src="Movies/布袋头.png" alt="电影布袋头">
+      <h3>《布袋头》</h3>
+      <p>Baghead (2023)</p>
+      <p>简介：一位年轻女子继承了一家破旧的酒吧，并在其地下室发现了一个黑暗的秘密——Baghead——一种变形的生物，可以让你与失去的亲人交谈，但并非没有后果。</p>
+    </a>
+   </div>
+    </section>
+
+    <!--恐影最爱-->
+	 <section class="article-section">
+    <h2>恐影最爱</h2>
+    <div class="best-movie">
+      <a href="https://movie.douban.com/subject/1474189/" target="_blank">
+      <img src="Movies/电锯惊魂3.jpg" alt="电锯惊魂3">
+      <h3>《电锯惊魂3》</h3>
+      <p>Saw III (2006)</p>
+      <p>简介：“竖锯”和新学徒阿曼达一起失踪，警方四处搜索，满城阴云密布。
+        <br> 　　一天夜里，刚值完晚班的女医生莲恩·戴伦惨遭绑架,此时“竖锯 ”已卧床不起、奄奄一息，莲恩被告知除非她能在死亡游戏完成前保住这个疯子的性命，否则她和杰夫必死无疑！
+        <br> 　　为了活下去，神经高度紧张、备受煎熬的莲恩想尽办法让“竖锯”保住最后的呼吸。然而她却怎么也想不到，杀人狂暗地里有着更可怕的杀人计划--那将会是恶名彰著的“竖锯”绞尽心血的死前华彩！最后的终极死亡游戏即将开始…… </p>
+      </a>
+    </div>
+    <div class="best-movie">
+      <a href="https://movie.douban.com/subject/35779959/" target="_blank">
+      <img src="Movies/危笑.jpg" alt="危笑">
+      <h3>《危笑》</h3>
+      <p>Smile (2022)</p>
+      <p>简介：在目睹一名病人诡异的创伤经验之后，萝丝·卡特医师（索茜·贝肯 饰）开始经历一些她无法解释的恐怖事件。当一股令人不寒而栗的可怕力量开始占据她的生活，萝丝就必须面对她令人不安的阴暗过去，才能够存活并逃离她充满恐惧的全新现实。</p>
+      </a>
+   </div>
+    </section>
+
+    <!--美学收藏-->
+	 <section class="article-section">
+      <h2>美学收藏</h2>
+      <div class="best-movie">
+         <a href="https://aesthetics.fandom.com/wiki/Starrflesh" target="_blank">
+        <img src="Movies/StarrfleshDog1.jpg" alt="StarrfleshDog1">
+        <h3>"星肉"美学</h3>
+        <p>"Starrflesh"</p>
+        <p>简介：Starrflesh，也称为 Starflesh，是一种超现实主义/恐怖美学，围绕着牙齿、星星、动物、水、玻璃等特征，以及空虚、不可思议甚至愤怒的感觉。<br>这种美学在 2010 年代初/中期开始在 Tumblr（标签）上获得关注，并在 @starrflesh 年复兴。
+        </a>
+      </div>
+      <div class="best-movie">
+         <a href="https://aesthetics.fandom.com/wiki/Dreamcore" target="_blank">
+        <img src="Movies/Train-to-heaven-dreamcore-aesthetic.jpg" alt="dreamcore">
+        <h3>梦核</h3>
+        <p>Dreamcore</p>
+        <p>简介：Dreamcore是一种超现实主义美学，它使用通常与梦、白日梦或噩梦相关的图案，通过图像、视频和有时的音乐等媒体[1]来描绘。Dreamcore 与 Weirdcore 有许多相似之处。</p>
+        </a>
+      </div>
+      </section>
+
+<!--恐怖游戏收藏-->
+	 <section class="article-section">
+      <h2>恐游收藏</h2>
+      <div class="best-movie">
+         <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/" target="_blank">
+        <img src="Movies/FNAF.jpg" alt="FNAF">
+        <h3>《玩具熊的五夜后宫》</h3>
+        <p>Five Nights at Freddy's</p>
+        <p>简介：玩具熊的五夜后宫（英语：Five Nights at Freddy's，简称“FNAF”）是由斯科特·考顿创作的美国跨媒体制作。同名的第一款电子游戏于2014年8月8日发行，此后该系列取得了全球的广泛受欢迎。华纳兄弟影业于2015年决定将人气游戏《玩具熊的五夜后宫》改编成真人版电影，并且由曾执导过《鬼驱人》、《怪兽屋》的吉尔·克兰操刀。
+         </a>
+      </div>
+      <div class="best-movie">
+         <a href="https://store.steampowered.com/app/381210/_/" target="_blank">
+        <img src="Movies/DBD.jpg" alt="DBD">
+        <h3>《黎明杀机》</h3>
+        <p>Dead by Daylight</p>
+        <p>简介：《黎明杀机》是一款由Behaviour Interactive工作室开发并发行的 恐怖 题材非对称竞技类游戏，于2016年6月14日以Microsoft Windows版在Steam上首次发售。手机版原定于2019年底于Android&iOS平台上发售，后于2020年4月16日发布。</p>
+        </a>
+      </div>
+      </section>
+</article>
+ </div>
+ <div id="MyOC" class="MyOC">
+   <div class="MyOC-detail">
+       <h2>我的角色</h2>
+       <section class="article-section">
+           <div class="slider">
+               <!-- 图片包裹在a标签内以实现点击跳转 -->
+               <div class="character">
+                   <a href="角色详情.html" target="_blank">
+                       <img id="currentCharacterImg" src="images/角色/SILGA.png" alt="当前角色">
+                   </a>
+               </div>
+           </div>
+       </section>
+   </div>
+   <div class="button-container">
+       <!-- 为每个按钮添加点击处理函数 -->
+       <button id="role1Button" data-character-src="images/角色/SILGA.png" class="character-button">
+           <img src="images/icons/SILGA.jpg" alt="角色1图标" class="button-icon">SILGA
+       </button>
+       <button data-character-src="images/角色/鲨鱼.png" class="character-button">
+           <img src="images/icons/鲨鱼.jpg" alt="角色2图标" class="button-icon">鲨鱼
+       </button>
+       <button data-character-src="images/角色/S鬣狗.png" class="character-button">
+           <img src="images/icons/鬣狗.jpg" alt="角色3图标" class="button-icon">鬣狗
+       </button>
+   </div>
+</div>
+<div id="MyArtWork" class="MyPrecious">
+   <div class="MyPrecious_Title">
+      <h1>我的作品</h1>
+   </div>
+   <video autoplay loop muted playsinline id="bottom-background-video">
+      <source src="video/红蓝2.mp4" type="video/mp4">
+      <!-- 可以添加webm等其他格式的备用源 -->
+      <track kind="captions" src="videos/captions.vtt" srclang="en" label="English">
+      <!-- 这里是替代内容，对于不支持视频的浏览器 -->
+  </video>
+
+
+     <!--左侧文章内容区-->
+  <article >
+    
+    <!--数码绘画-->
+    <section class="article-section">
+    <h2>数码绘画</h2>
+    <div class="best-movie">
+      <a href="https://www.douban.com/doubanapp/dispatch?uri=/movie/36235977" target="_blank">
+      <img src="images/作品/黑狗.jpeg" alt="黑狗">
+      <h3>《狗》</h3>
+      <p>19年画的</p>
+      <p>简介：一只狗</p>
+    </a>
+   </div>
+    <div class="best-movie">
+      <a href="https://www.douban.com/doubanapp/dispatch?uri=/movie/35027791" target="_blank">
+      <img src="images/作品/像素画.png" alt="像素画">
+      <h3>《乔伊》</h3>
+      <p>22年画的</p>
+      <p>简介：乔伊的像素画</p>
+    </a>
+   </div>
+    </section>
+
+    <!--他人互动-->
+	 <section class="article-section">
+    <h2>他人互动</h2>
+    <div class="best-movie">
+      <a href="https://movie.douban.com/subject/1474189/" target="_blank">
+      <img src="images/作品/鲨鱼和狗.jpg" alt="鲨鱼和狗">
+      <h3>《鲨鱼和狗》</h3>
+      <p>2024画的</p>
+      <p>和朋友的合照</p>
+      </a>
+    </div>
+    <div class="best-movie">
+      <a href="https://movie.douban.com/subject/35779959/" target="_blank">
+      <img src="images/作品/某个朋友.jpg" alt="某个朋友">
+      <h3>《某个朋友》</h3>
+      <p>2023画的</p>
+      <p>简介：给朋友的画。</p>
+      </a>
+   </div>
+    </section>
+
+    <!--3D建模-->
+	 <section class="article-section">
+      <h2>3D建模</h2>
+      <div class="best-movie">
+         <a href="https://aesthetics.fandom.com/wiki/Starrflesh" target="_blank">
+        <img src="images/作品/引擎课设.jpg" alt="引擎课设">
+        <h3>《林中小屋》</h3>
+        <p>2023下半年引擎课设</p>
+        <p>简介：简介：作为建模而言还不错。</p>
+        </a>
+      </div>
+      <div class="best-movie">
+         <a href="https://aesthetics.fandom.com/wiki/Dreamcore" target="_blank">
+        <img src="images/作品/高丽菜.jpg" alt="高丽菜">
+        <h3>《旋转高丽菜》</h3>
+        <p>2023练习</p>
+        <p>简介：旋转的高丽菜一枚吖</p>
+        </a>
+      </div>
+      </section>
+
+<!--游戏制作-->
+	 <section class="article-section">
+      <h2>游戏制作</h2>
+      <div class="best-movie">
+         <a href="https://store.steampowered.com/app/319510/Five_Nights_at_Freddys/" target="_blank">
+        <img src="images/作品/BobTot.png" alt="BobTot">
+        <h3>《BobTot》</h3>
+        <p>2024上半年制作</p>
+        <p>简介：和雕虫先生合作的小游戏。</p>
+         </a>
+      </div>
+      <div class="best-movie">
+         <a href="https://store.steampowered.com/app/381210/_/" target="_blank">
+        <img src="images/作品/引擎课设.jpg" alt="引擎课设">
+        <h3>《林中小屋》</h3>
+        <p>2023下半年引擎课设</p>
+        <p>简介：作为游戏而言未完成</p>
+        </a>
+      </div>
+      </section>
+</article>
+ </div>      
+</div>
+  <!--右侧边栏内容区-->
+   <aside>
+
+    <!--广告区-->
+    <section class="advert">
+      <h2> 广告区</h2>
+      <div id="advert">
+         <img src="images/广告/ad1.jpg" alt="广告1" class="active">
+         <img src="images/广告/ad2.jpg" alt="广告2">
+         <img src="images/广告/ad3.jpg" alt="广告3">
+       </div>
+      <h3>《大黑暗》--林田球最新漫画</h3>
+      <p>林田球老师新作《大黑暗》<br>快给我看！</p>
+	 </section>
+
+
+    
+
+	 <!-- 留言板 -->
+<section class="message-board">
+   <h2>留言板</h2>
+   <form action="/submit-message" method="POST">
+       <div class="input-group">
+           <label for="name">姓名：</label>
+           <input type="text" id="name" name="name" required>
+       </div>
+       <div class="input-group">
+           <label for="email">邮箱：</label>
+           <input type="email" id="email" name="email" required>
+       </div>
+       <div class="input-group">
+           <label for="message">留言内容：</label>
+           <textarea id="message" name="message" rows="4" required></textarea>
+       </div>
+       <button type="submit">提交留言</button>
+   </form>
+</section>
+<!-- 心情分享区 -->
+<section class="mood-sharing">
+   <h2>此刻心情</h2>
+   <div class="mood-selector">
+     <div class="mood-item" draggable="true">
+       😄
+     </div>
+     <div class="mood-item" draggable="true">
+       😊
+     </div>
+     <div class="mood-item" draggable="true">
+       😐
+     </div>
+     <div class="mood-item" draggable="true">
+       😔
+     </div>
+     <div class="mood-item" draggable="true">
+       😠
+     </div>
+   </div>
+   <div class="drop-zone">
+     <p>拖动表情到这里</p>
+   </div>
+ </section>
+
+	 <!-- 本人最近在干什么 -->
+<section class="recent-activities">
+   <h2>SILGA最近在干什么？</h2>
+   <ul>
+       <li>学习GLSL编程语言--"重要！"</li>
+       <li>研究web前端开发--"好烦！"</li>
+       <li>画些小破画--"有点像SHIT..."</li>
+       <li>疯狂购入谷子和画集--"疯狂！"</li>
+   </ul>
+</section>
+    <!--合作伙伴-->
+	 <section class="aside-friends">
+	  <h2 id="title5">合作伙伴</h2>
+	  <ul>
+	     <li>血达摩</li>
+		 <li>雕虫先生</li>
+	 </section>
+    <div class="aside-placeholder"></div>
+	 <!--关于我-->
+	 <section id="about" class="about">
+    <h2>关于SILGA</h2>
+    <p>数字媒体技术在逃学生，被代码敲打得想死</p>
+    <p>会画小破画...但是画得一般般的18线小画师一枚呀</p>
+    <p>想走技术美术路线...感觉会死在路上额呵呵</p>
+    <p>鹰角网络！让我进进！</p>
+    </section>
+   
+   </aside>
+
+ </div>
+</main>
+<!--页脚-->
+ <div id="footer-wrapper">
+
+  <!--页脚导航-->
+<footer>
+   <div class="footer-contact">
+      <h3>联系我</h3>
+      <p>地址：玛雅大街13号</p>
+      <p>电话：123-45678</p>
+      <p>邮箱：info@SILGA.com</p>
+   </div>
+   <div class="footer-social">
+      <h3>关注我</h3>
+      <ul>
+         <li><a href="https://space.bilibili.com/13207996?spm_id_from=333.337.search-card.all.click" target="_blank">Bilibili</a></li>
+         <li><a href="https://github.com/Silga-Devilish" target="_blank">Github</a></li>
+         <li><a href="https://stayhere211.lofter.com/" target="_blank">Lofter</a></li>
+      </ul>
+   </div>
+   <div class="footer-nav">
+      <h3>网站导航</h3>
+      <ul>
+         <li><a href="#home">首页</a></li>
+         <li><a href="#MyPrecious">我的收藏</a></li>
+         <li><a href="#MyOc">我的角色们</a></li>
+         <li><a href="##MyArtWork">我的作品</a></li>
+         <li><a href="#about">关于我</a></li>
+      </ul>
+   </div>
+
+<!--版权标识-->
+   
+
+
+</footer>
+
+   <section id="copyright" class="copyright">
+   copyright©2003-2024 SILGA能力有限公司 
+   </section>
+
+
+
+
+
+
+
+
+   <script src="script.js"></script>
+   <script>
+      // 页面加载时检查是否记住用户
+      document.addEventListener('DOMContentLoaded', function() {
+          var username = localStorage.getItem('username');
+          if (!username) {
+              // 如果没有找到用户名（意味着未登录或未记住用户），则重定向到登录页
+              window.location.href = 'login.html';
+          }
+      });
+  </script>
+ </body>
+</html>
